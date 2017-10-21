@@ -5,10 +5,10 @@
 In this exercise, we will explore the machine learning tools available in Python while still writing Ruby.
 This is thanks to a fantastic ruby gem called [`pycall`](https://github.com/mrkn/pycall.rb). By using this gem, we can leverage the many Python libraries for data science and data visualisation.
 
-# Setup for PyCall
+# Setup for using PyCall in this workshop
 
-## Install Python 3.5 or higher
-1. If you have Windows or Linux, instructions on installing Python can be found at: http://docs.python-guide.org/en/latest/starting/installation/
+1. Install Python 3.5 or higher
+If you have Windows or Linux, instructions on installing Python can be found at: http://docs.python-guide.org/en/latest/starting/installation/
 Be sure to install Python version 3.5.3 or higher. These installations will come with package management tool `pip3`, so you will not have to install it separately.
 Use Homebrew for Mac installation
 ```
@@ -48,16 +48,16 @@ PYTHON=path_to_your_python_install
 Read through and run the example scripts in the pycall_examples folder. Take some time to experiment!
 
 1. `ruby pycall_predict.rb iris_predict.csv` - Trains a classifier model to predict iris data passed from csv file argument. This script demonstrates how to use sklearn datasets, as well as a dataset from csv for training.
-  Experiment #1: Modify the script to use a different classifier.
-  Experiment #2: Modify the script to use a different data set, your own data or from elsewhere.
-  Experiment #3: Modify the script to solve a non-classification problem.
+  - Experiment #1: Modify the script to use a different classifier.
+  - Experiment #2: Modify the script to use a different data set, your own data or from elsewhere.
+  - Experiment #3: Modify the script to solve a non-classification problem.
 
 2. `ruby pycall_evaluate.rb` - Evaluates a series of classifier models configured with different tuning parameters.
-  Experiment #1: Modify the script to use a different classifier and/or different tuning parameters.
-  Experiment #2: Modify the script to evaluate a series of models trained with different amounts of training data by changing the amount of examples in your dataset to have 50, 100 and 150 examples. (Hint: Pass a parameter into the `make_classification` method)
-  Experiment #3: Modify the script to use a different data set, your own data or from elsewhere.
-  Experiment #4: Modify the script to evaluate for regression models instead.
+  - Experiment #1: Modify the script to use a different classifier and/or different tuning parameters.
+  - Experiment #2: Modify the script to evaluate a series of models trained with different amounts of training data by changing the amount of examples in your dataset to have 50, 100 and 150 examples. (Hint: Pass a parameter into the `make_classification` method)
+  - Experiment #3: Modify the script to use a different data set, your own data or from elsewhere.
+  - Experiment #4: Modify the script to evaluate for regression models instead.
 
 3. `ruby pycall_classification_example.rb` - Shows how different classifier algorithms handle different types of data, and plots the results.
-  Experiment #1: Add/swap out some more algorithms and datasets.
-  Experiment #2: Experiment with the plotting and customise the information displayed, etc.
+  - Experiment #1: Add/swap out some more algorithms and datasets.
+  - Experiment #2: Experiment with the plotting and customise the information displayed, etc.
