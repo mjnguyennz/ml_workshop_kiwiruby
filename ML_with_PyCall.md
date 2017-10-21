@@ -3,66 +3,58 @@
 # Introduction
 
 In this exercise, we will explore the machine learning tools available in Python while still writing Ruby.
-This is thanks to a fantastic ruby gem called `pycall`. By using this gem, we can leverage the many Python libraries for data science and data visualisation.
+This is thanks to a fantastic ruby gem called [`pycall`](https://github.com/mrkn/pycall.rb). By using this gem, we can leverage the many Python libraries for data science and data visualisation.
 
 # Setup for PyCall
 
-1. Install Python 3.5 or higher
-If you have Windows or Linux, instructions on installing Python can be found at: http://docs.python-guide.org/en/latest/starting/installation/
-Be sure to install Python version 3.5 or higher. These installations will come with package management tool `pip`, so you will not have to install it separately.
-
+## Install Python 3.5 or higher
+1. If you have Windows or Linux, instructions on installing Python can be found at: http://docs.python-guide.org/en/latest/starting/installation/
+Be sure to install Python version 3.5.3 or higher. These installations will come with package management tool `pip3`, so you will not have to install it separately.
 Use Homebrew for Mac installation
 ```
 $ brew update
 $ brew install python3
 ```
 Confirm that your version of python is greater than 3.5
-`$ python3 --version`
+```
+$ python3 --version
+```
 Confirm that pip is also installed
-`$ pip3 --version`
-To make things easier you can optionally create aliases:
-Add to your source ~/.bash_profile
 ```
-alias python='python3'
-alias pip='pip3'
+$ pip3 --version
 ```
-Run your .bashprofile to pick up your changes:
-`$ source ~/.bash_profile`
 
-2. Install python libraries using `pip` (use pip3 if you opted not to create aliases)
+2. Install Python libraries
 ```
-$ pip install numpy
-$ pip install pandas
-$ pip install scipy
-$ pip install scikit-learn
+$ pip3 install numpy
+$ pip3 install pandas
+$ pip3 install scipy
+$ pip3 install scikit-learn
 ```
 
 3. Install the necessary Ruby gems:
 ```
-$ gem install pycall
-$ gem install numpy
-$ gem install matplotlib
-$ gem install pandas
+$ cd pycall_examples
+$ bundle install
 ```
 
-4. Set an environment variable to tell PyCall the location of your python install. Setting this environment variable is how you can adjust the version of Python invoked from PyCall.
+4. Create a `.env` file with the `PYTHON` environment variable to tell PyCall the location of your python install. Setting this environment variable is how you can adjust the version of Python invoked from PyCall.
 ```
-$ PYTHON=/usr/local/bin/python3
-$ export PYTHON
+PYTHON=path_to_your_python_install
 ```
 
 # Time to have some fun with PyCall!
 
 Read through and run the example scripts in the pycall_examples folder. Take some time to experiment!
 
-1. `ruby pycall_predict.rb iris_predict.csv` - Trains a classifier model to predict iris data passed from csv file argument.
+1. `ruby pycall_predict.rb iris_predict.csv` - Trains a classifier model to predict iris data passed from csv file argument. This script demonstrates how to use sklearn datasets, as well as a dataset from csv for training.
   Experiment #1: Modify the script to use a different classifier.
   Experiment #2: Modify the script to use a different data set, your own data or from elsewhere.
   Experiment #3: Modify the script to solve a non-classification problem.
 
 2. `ruby pycall_evaluate.rb` - Evaluates a series of classifier models configured with different tuning parameters.
   Experiment #1: Modify the script to use a different classifier and/or different tuning parameters.
-  Experiment #2: Modify the script to evaluate a series of models trained with different amounts of training data. (Pass a parameter into the `make_classification` method)
+  Experiment #2: Modify the script to evaluate a series of models trained with different amounts of training data by changing the amount of examples in your dataset to have 50, 100 and 150 examples. (Hint: Pass a parameter into the `make_classification` method)
   Experiment #3: Modify the script to use a different data set, your own data or from elsewhere.
   Experiment #4: Modify the script to evaluate for regression models instead.
 
