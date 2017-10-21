@@ -7,8 +7,7 @@ This is thanks to a fantastic ruby gem called [`pycall`](https://github.com/mrkn
 
 ## Setup for using PyCall in this workshop
 
-1.
-Install Python 3.5.3 or higher. These installations will come with package management tool `pip3`, so you will not have to install it separately.
+1. Install Python 3.5.3 or higher. These installations will come with package management tool `pip3`, so you will not have to install it separately.
 - If you have Windows or Linux, instructions on installing Python can be found at: http://docs.python-guide.org/en/latest/starting/installation/
 
 - Use Homebrew for Mac installation:
@@ -25,8 +24,7 @@ $ python3 --version
 $ pip3 --version
 ```
 
-2.
-Install Python libraries
+2. Install Python libraries
 ```
 $ pip3 install numpy
 $ pip3 install pandas
@@ -34,15 +32,13 @@ $ pip3 install scipy
 $ pip3 install scikit-learn
 ```
 
-3.
-Install the necessary Ruby gems:
+3. Install the necessary Ruby gems:
 ```
 $ cd pycall_examples
 $ bundle install
 ```
 
-4.
-Create a `.env` file with the `PYTHON` environment variable to tell PyCall the location of your python install. Setting this environment variable is how you can adjust the version of Python invoked from PyCall.
+4. Create a `.env` file with the `PYTHON` environment variable to tell PyCall the location of your python install. Setting this environment variable is how you can adjust the version of Python invoked from PyCall.
 ```
 PYTHON=path_to_your_python_install
 ```
