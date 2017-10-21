@@ -1,5 +1,6 @@
-# USAGE: ruby pycall_predict.rb <name of csv of iris data to predict on>
+# USAGE: ruby pycall_predict.rb iris_predict.csv
 # iris data to predict on csv columns should be: Sepal Length, Sepal Width, Petal Length and Petal Width.
+require 'dotenv/load'
 require 'csv'
 require 'pycall/import'
 include PyCall::Import
@@ -43,6 +44,7 @@ end
 csv_file_name = ARGV[0]
 input_to_predict = CSV.read(csv_file_name)
 
+puts "Using sklearn dataset for training!"
 # load training data from sklearn
 data = datasets.load_iris()
 

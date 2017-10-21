@@ -4,3 +4,5 @@ gem 'pycall'
 gem 'numpy'
 gem 'matplotlib'
 gem 'pandas'
+
+gem 'dotenv'

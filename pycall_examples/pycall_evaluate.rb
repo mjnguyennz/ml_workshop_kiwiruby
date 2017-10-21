@@ -1,3 +1,5 @@
+# USAGE: ruby pycall_evaluate.rb
+require 'dotenv/load'
 require 'pycall/import'
 include PyCall::Import
 

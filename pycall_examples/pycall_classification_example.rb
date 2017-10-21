@@ -1,3 +1,5 @@
+# USAGE: ruby pycall_classification_example.rb
+require 'dotenv/load'
 require 'pycall/import'
 include PyCall::Import
 
