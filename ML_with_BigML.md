@@ -5,7 +5,7 @@
   - [Upload your ML Ready Data](#upload-your-ml-ready-data)
   - [Create a dataset](#create-a-dataset)
   - [Visualising your dataset](#visualising-your-dataset)
-  - [Split the dataset into training, test and cross-validation datasets](#split-the-dataset-into-training-test-and-cross-validation-datasets)
+  - [Split the dataset into training, test/cross-validation datasets](#split-the-dataset-into-training-testcross-validation-datasets)
 - [Working with regression (predicting numerical or categorical values)](#working-with-regression-predicting-numerical-or-categorical-values)
   - [Create a regression model from your dataset](#create-a-regression-model-from-your-dataset)
   - [Visualising your regression model](#visualising-your-regression-model)

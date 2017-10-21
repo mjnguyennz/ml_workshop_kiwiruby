@@ -1,30 +1,32 @@
 # Machine Learning in Ruby using PyCall
 
-# Introduction
+## Introduction
 
 In this exercise, we will explore the machine learning tools available in Python while still writing Ruby.
 This is thanks to a fantastic ruby gem called [`pycall`](https://github.com/mrkn/pycall.rb). By using this gem, we can leverage the many Python libraries for data science and data visualisation.
 
-# Setup for using PyCall in this workshop
+## Setup for using PyCall in this workshop
 
-1. Install Python 3.5 or higher
-If you have Windows or Linux, instructions on installing Python can be found at: http://docs.python-guide.org/en/latest/starting/installation/
-Be sure to install Python version 3.5.3 or higher. These installations will come with package management tool `pip3`, so you will not have to install it separately.
-Use Homebrew for Mac installation
+1.
+Install Python 3.5.3 or higher. These installations will come with package management tool `pip3`, so you will not have to install it separately.
+- If you have Windows or Linux, instructions on installing Python can be found at: http://docs.python-guide.org/en/latest/starting/installation/
+
+- Use Homebrew for Mac installation:
 ```
 $ brew update
 $ brew install python3
 ```
-Confirm that your version of python is greater than 3.5
+- Confirm that your version of python is greater than 3.5.3
 ```
 $ python3 --version
 ```
-Confirm that pip is also installed
+- Confirm that pip is also installed
 ```
 $ pip3 --version
 ```
 
-2. Install Python libraries
+2.
+Install Python libraries
 ```
 $ pip3 install numpy
 $ pip3 install pandas
@@ -32,13 +34,15 @@ $ pip3 install scipy
 $ pip3 install scikit-learn
 ```
 
-3. Install the necessary Ruby gems:
+3.
+Install the necessary Ruby gems:
 ```
 $ cd pycall_examples
 $ bundle install
 ```
 
-4. Create a `.env` file with the `PYTHON` environment variable to tell PyCall the location of your python install. Setting this environment variable is how you can adjust the version of Python invoked from PyCall.
+4.
+Create a `.env` file with the `PYTHON` environment variable to tell PyCall the location of your python install. Setting this environment variable is how you can adjust the version of Python invoked from PyCall.
 ```
 PYTHON=path_to_your_python_install
 ```
