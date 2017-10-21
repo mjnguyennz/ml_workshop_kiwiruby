@@ -1,0 +1,22 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    matplotlib (1.0.0)
+      pycall (>= 1.0.0)
+    numpy (0.1.0)
+      pycall (>= 1.0.1)
+    pandas (0.3.0)
+      pycall (>= 1.0.0)
+    pycall (1.0.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  matplotlib
+  numpy
+  pandas
+  pycall
+
+BUNDLED WITH
+   1.15.4
