@@ -7,24 +7,33 @@ This is thanks to a fantastic ruby gem called [`pycall`](https://github.com/mrkn
 
 ## Setup for using PyCall in this workshop
 
-1. Install Python 3.5.3 or higher. These installations will come with package management tool `pip3`, so you will not have to install it separately.
+1. Install Python 3.5.3 or higher.
 - If you have Linux, instructions on installing Python can be found at: http://docs.python-guide.org/en/latest/starting/install3/linux/#install3-linux - `pipenv` installation is entirely optional for this workshop, but will be useful if you eventually need to manage different python dependencies for different projects.
+Be sure to install pip3
+```
+$ apt-get install python3-pip
+```
 
-- Use Homebrew for Mac installation:
+- Use Homebrew for Mac installation: (This installation will come with package management tool `pip3`, so you will not have to install it separately.)
 ```
 $ brew update
 $ brew install python3
 ```
-- Confirm that your version of python is greater than 3.5.3
+- Confirm your version of python is greater than 3.5.3.
 ```
 $ python3 --version
 ```
-- Confirm that pip is also installed
+OR if on Linux
+```
+$ python3.6 --version
+```
+
+- Confirm that pip3 is also installed and associated to your Python install.
 ```
 $ pip3 --version
 ```
 
-2. Install Python libraries
+2. Install Python libraries (Linux users may have to `sudo pip3`)
 ```
 $ pip3 install numpy
 $ pip3 install pandas
@@ -38,7 +47,7 @@ $ cd pycall_examples
 $ bundle install
 ```
 
-4. Create a `.env` file with the `PYTHON` environment variable to tell PyCall the location of your python install (the output of the command `which python3`). Setting this environment variable is how you can adjust the version of Python invoked from PyCall.
+4. Create a `.env` file with the `PYTHON` environment variable to tell PyCall the location of your python install (the output of the command `which python3` or `which python3.6`). Setting this environment variable is how you can adjust the version of Python invoked from PyCall.
 ```
 PYTHON=path_to_your_python_install
 ```
