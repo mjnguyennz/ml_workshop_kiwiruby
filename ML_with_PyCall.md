@@ -3,12 +3,12 @@
 ## Introduction
 
 In this exercise, we will explore the machine learning tools available in Python while still writing Ruby.
-This is thanks to a fantastic ruby gem called [`pycall`](https://github.com/mrkn/pycall.rb). By using this gem, we can leverage the many Python libraries for data science and data visualisation.
+This is thanks to a fantastic ruby gem called [`pycall`](https://github.com/mrkn/pycall.rb). By using this gem, we can leverage the many Python libraries for data science and data visualisation. Unfortunately, this gem relies on Fiddle, which has shown inconsistencies on Windows. If you are on Windows, this workshop will work best if you are able to install a Linux VM with Ruby 2.4 installed.
 
 ## Setup for using PyCall in this workshop
 
 1. Install Python 3.5.3 or higher. These installations will come with package management tool `pip3`, so you will not have to install it separately.
-- If you have Windows or Linux, instructions on installing Python can be found at: http://docs.python-guide.org/en/latest/starting/installation/
+- If you have Linux, instructions on installing Python can be found at: http://docs.python-guide.org/en/latest/starting/install3/linux/#install3-linux - `pipenv` installation is entirely optional for this workshop, but will be useful if you eventually need to manage different python dependencies for different projects.
 
 - Use Homebrew for Mac installation:
 ```
@@ -32,7 +32,7 @@ $ pip3 install scipy
 $ pip3 install scikit-learn
 ```
 
-3. Install the necessary Ruby gems:
+3. Clone this repo and install the necessary Ruby gems:
 ```
 $ cd pycall_examples
 $ bundle install

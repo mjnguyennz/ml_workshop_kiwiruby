@@ -17,7 +17,7 @@ The general format of the workshop is as follows:
 60 minutes - Lecture about the Machine Learning and the basic workflow.
 link to slides
 
-20 minutes - Exploring data and getting it ML ready. [Data exerecises](Data_Exercises.md)
+20 minutes - Exploring data and getting it ML ready. [Data exercises](Data_Exercises.md)
 
 30 minutes - Tea Break
 
