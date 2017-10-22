@@ -38,7 +38,7 @@ $ cd pycall_examples
 $ bundle install
 ```
 
-4. Create a `.env` file with the `PYTHON` environment variable to tell PyCall the location of your python install. Setting this environment variable is how you can adjust the version of Python invoked from PyCall.
+4. Create a `.env` file with the `PYTHON` environment variable to tell PyCall the location of your python install (the output of the command `which python3`). Setting this environment variable is how you can adjust the version of Python invoked from PyCall.
 ```
 PYTHON=path_to_your_python_install
 ```
