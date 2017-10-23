@@ -21,6 +21,8 @@ pyfrom 'sklearn.discriminant_analysis', import: %i(LinearDiscriminantAnalysis Qu
 
 # Known issue with PyCall: MacOSX backend is not usable through pycall.
 pyimport 'matplotlib', as: :mp
+
+mp.use('agg')
 mp.rcParams[:backend] = 'TkAgg' if mp.rcParams[:backend] == 'MacOSX'
 
 pyimport 'matplotlib.pyplot', as: :plt
@@ -174,4 +176,4 @@ datasets.each do |ds|
 end
 
 fig.subplots_adjust(left: 0.02, right: 0.98)
-plt.show()
+plt.savefig('comparison.png')
