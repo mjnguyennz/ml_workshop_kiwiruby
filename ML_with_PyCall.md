@@ -7,7 +7,7 @@ This is thanks to a fantastic ruby gem called [`pycall`](https://github.com/mrkn
 
 ## Setup for using PyCall in this workshop
 
-1. Install [Docker](https://www.docker.com/community-edition#/download). To keep installation of all the various libraries and language dependencies consistent across everyone's various operating systems, we will be use Docker to run our Ruby + Python environment. For Windows users, Docker Community Edition may not be available for your version of Windows, but you can look into the [Docker Toolbox](https://www.docker.com/products/docker-toolbox). Failing that, you can always install a Linux VM and install Docker onto that.
+1. Install [Docker](https://www.docker.com/community-edition#/download). To keep installation of all the various libraries and language dependencies consistent across everyone's various operating systems, we will be using Docker to run our Ruby + Python environment. For Windows users, Docker Community Edition may not be available for your version of Windows, but you can look into the [Docker Toolbox](https://docs.docker.com/toolbox/toolbox_install_windows/). Failing that, you can always install a Linux VM and install Docker onto that.
 
 2. Clone this repo so you have access to the code examples locally.
 
@@ -39,12 +39,12 @@ You will now see that in your original docker bash terminal, the file will have 
   - Experiment #2: Modify the script to use a different data set, your own data or from elsewhere.
   - Experiment #3: Modify the script to solve a non-classification problem.
 
-2. `ruby pycall_evaluate.rb` - Evaluates a series of classifier models configured with different tuning parameters.
+2. `ruby pycall_evaluate.rb` - Evaluates the performance of a series of K Nearest Neighbor classifier models, each configured with different tuning parameters.
   - Experiment #1: Modify the script to use a different classifier and/or different tuning parameters.
   - Experiment #2: Modify the script to evaluate a series of models trained with different amounts of training data by changing the amount of examples in your dataset to have 50, 100 and 150 examples. (Hint: Pass a parameter into the `make_classification` method)
   - Experiment #3: Modify the script to use a different data set, your own data or from elsewhere.
   - Experiment #4: Modify the script to evaluate for regression models instead.
 
-3. `ruby pycall_classification_example.rb` - Shows how different classifier algorithms handle different types of data, and plots the results. The plot is saved into a file called `comparison.png`. You can retrieve the image to view locally with `docker cp <container_id>:/usr/app/comparison.png <where you want to put the file>`
+3. `ruby pycall_classification_example.rb` - Shows how different classifier algorithms perform with different types of data, and plots the results. The plot is saved into a file called `comparison.png`. You can retrieve the image to view locally with `docker cp <container_id>:/usr/app/comparison.png <where you want to save the file locally>`
   - Experiment #1: Add/swap out some more algorithms and datasets.
   - Experiment #2: Experiment with the plotting and customise the information displayed, etc.

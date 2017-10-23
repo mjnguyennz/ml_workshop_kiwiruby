@@ -19,11 +19,9 @@ pyfrom 'sklearn.ensemble', import: %i(RandomForestClassifier AdaBoostClassifier)
 pyfrom 'sklearn.naive_bayes', import: :GaussianNB
 pyfrom 'sklearn.discriminant_analysis', import: %i(LinearDiscriminantAnalysis QuadraticDiscriminantAnalysis)
 
-# Known issue with PyCall: MacOSX backend is not usable through pycall.
 pyimport 'matplotlib', as: :mp
 
 mp.use('agg')
-mp.rcParams[:backend] = 'TkAgg' if mp.rcParams[:backend] == 'MacOSX'
 
 pyimport 'matplotlib.pyplot', as: :plt
 pyimport 'matplotlib.colors', as: :mplc
