@@ -122,9 +122,9 @@ BigML splits a dataset into two. To make our three datasets (training, test and 
   * The precision of your model is represented by a percentage
     (true positives)/(true positives + false positives)
   * The performance is better be measured by the F-measure (aka F-score) than accuracy because this measurement takes into account both false negatives and false negatives.
-6. If your objective field was a numberical value, you will be show some statistical measurements used to measure the performance. Explanations of all these measurements are out of scope for this guide, but here are some rules of thumb:
-  * Mean Squared Error: mean of the model prediction errors for each instance. The lower the better.
-  * Mean Absolute Error: squared mean of the model prediction errors for each instance. The lower the better.
+6. If your objective field was a numerical value, you will be show some statistical measurements used to measure the performance. Explanations of all these measurements are out of scope for this guide, but here are some rules of thumb:
+  * Mean Squared Error: squared mean of the model prediction errors for each instance. The lower the better.
+  * Mean Absolute Error: mean of the model prediction errors for each instance. The lower the better.
   * R-squared values: The closer the R-squared is to 1, the better the model fits the data.
 
 ## Tune and optimise your model for better performance
