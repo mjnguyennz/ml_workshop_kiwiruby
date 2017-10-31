@@ -1,4 +1,4 @@
-# Machine Learning for Developers
+# Machine Learning for (Ruby) Developers
 
 ### Presented by Mai Nguyen
 ### KiwiRuby in Wellington, New Zealand, November 2, 2017
@@ -24,6 +24,6 @@ The general format of the workshop is as follows:
 
 45 minutes - BigML demonstration, and try it for yourself! [Quickstart Guide](ML_with_BigML.md)
 
-45 minutes - PyCall examples, and try it out! [Get started](ML_with_PyCall.md)
+50 minutes - PyCall examples, and try it out! [Get started](ML_with_PyCall.md)
 
 10 minutes - Wrap up.

@@ -3,7 +3,7 @@
 ## Introduction
 
 In this exercise, we will explore the machine learning tools available in Python while still writing Ruby.
-This is thanks to a fantastic ruby gem called [`pycall`](https://github.com/mrkn/pycall.rb). By using this gem, we can leverage the many Python libraries for data science and data visualisation.
+This is thanks to a fantastic ruby gem called [`pycall`](https://github.com/mrkn/pycall.rb), which will allow us to invoke Python from our Ruby code. By using this gem, we can leverage the many Python libraries for data science and data visualisation. PyCall was written by Kenta Murata, and was inspired by the language Julia's PyCall package. You can learn more about how PyCall works from Kenta himself [here](https://github.com/RubyData/rubykaigi2017/blob/master/pycall_lecture.ipynb).
 
 ## Setup for using PyCall in this workshop
 
