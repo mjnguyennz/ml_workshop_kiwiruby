@@ -15,7 +15,6 @@ In this workshop, I have tried to keep the exercises as flexible as possible, so
 The general format of the workshop is as follows:
 
 40 minutes - Lecture about the Machine Learning and the basic workflow and data preparation. [Slides](slides.pdf)
-slides
 
 20 minutes - Exploring data with some quick thought exercises. [Data exercises](Data_Exercises.md)
 
