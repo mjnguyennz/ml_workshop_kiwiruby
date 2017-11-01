@@ -10,8 +10,8 @@
   - [Create a regression model from your dataset](#create-a-regression-model-from-your-dataset)
   - [Visualising your regression model](#visualising-your-regression-model)
   - [View the Model Summary Report](#view-the-model-summary-report)
-- [Working with logistical regression (predicting categorical values)](#working-with-logistical-regression-predicting-categorical-values)
-  - [Create a logistical regression model from your dataset](#create-a-logistical-regression-model-from-your-dataset)
+- [Working with logistic regression (predicting categorical values)](#working-with-logistic-regression-predicting-categorical-values)
+  - [Create a logistic regression model from your dataset](#create-a-logistic-regression-model-from-your-dataset)
   - [Visualising your logistic regression model](#visualising-your-logistic-regression-model)
   - [Evaluating your model for predictive performance](#evaluating-your-model-for-predictive-performance)
   - [Tune and optimise your model for better performance](#tune-and-optimise-your-model-for-better-performance)
@@ -87,13 +87,13 @@ BigML splits a dataset into two. To make our three datasets (training, test and 
   * Click on a 'ring' to zoom into that level of the tree. Click on the centre to move one level up at the time until you get back to the top.
 3. Lastly, you can view your model in a PDP (Partial Dependence Plot). This shows a graphical representation of how two input fields affect the objective field, if all other inputs are held constant.
 
-## View the Model Summary Report
+## View the Model Summary Report (only available for regular models, not logistic regression )
 1. Click on the (clipboard with down arrow) to the right of your model's name.
 2. The Field importance tab shows the importance of different fields relative to each other.
 3. The Summary tab shows the distribution of the data, etc.
 
-# Working with logistical regression (predicting categorical values)
-## Create a logistical regression model from your dataset
+# Working with logistic regression (predicting categorical values)
+## Create a logistic regression model from your dataset
 1. Click on the training dataset on which you want to train a model.
 2. Mouseover the gears icon to the right of your dataset's name. Click on "Configure Logistic Regression"
 3. You can edit the objective field (if you haven't done so already).
