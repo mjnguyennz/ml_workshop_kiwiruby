@@ -133,7 +133,7 @@ BigML splits a dataset into two. To make our three datasets (training, test and 
     * remove irrelevant fields from your dataset
     * adding more relevant fields from your dataset
     * increase the quantity of instances in your dataset
-  * Create new models with different configurations, such as modifying the pruning strategy, node threshold, missing data strategy, weights on different data inputs, regularization, etc.
+  * Create new models with different advanced configurations, such as modifying the pruning strategy, node threshold, missing data strategy, weights on different data inputs, regularization, etc. (out of scope for this guide)
   * Try using ensembles (out of scope for this guide)
 2. Change some of the following and recreate your model:
 3. Evaluate your tuned model with your test dataset as per above.

@@ -59,7 +59,7 @@ model = train(data.data, data.target, {n_neighbors: 3})
 predictions = model.predict(input_to_predict)
 
 # Convert python predictions to PyCall List
-# And ten convert to Array for easy iterating.
+# And then convert to Array for easy iterating.
 predictions = PyCall::List.new(predictions).to_a
 predictions.each_with_index do |prediction, i|
   puts "Row #{i+1}: #{classes[prediction]}"

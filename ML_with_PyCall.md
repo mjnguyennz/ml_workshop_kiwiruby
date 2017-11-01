@@ -37,16 +37,17 @@ You will now see that in your original docker bash terminal, the file will have 
 1. `ruby pycall_predict.rb iris_predict.csv` - Trains a classifier model to predict iris data passed from csv file argument. This script demonstrates how to use sklearn datasets, as well as a dataset from csv for training.
   - Experiment #1: Modify the script to use a different classifier. You can try any of the ones used in `pycall_classification_example.rb`
   - Experiment #2: Modify the script to use a different data set, your own data or from elsewhere.
-  - Experiment #3: Modify the script to solve a regression problem.
+  - Experiment #3: Modify the script to solve a regression problem. Potential algorithms to use are LinearRegression, RandomForestRegressor, Ridge, Lasso, etc
 
 2. `ruby pycall_evaluate.rb` - Evaluates the performance of a series of K Nearest Neighbor classifier models, each configured with different tuning parameters.
   - Experiment #1: Modify the script to split the dataset into 60% training, 20% cross-validation and 20% test. Use the cross-validation sets to determine the best tuning parameters for the models, and use the test data to give a final evaluation of your optimised model.
-  - Experiment #2: Modify the script to use a different classifier and/or different tuning parameters. You can try any of the ones used in `pycall_classification_example.rb`
+  - Experiment #2: Modify the script to use a different classifier and/or different tuning parameters. You can try any of the classifiers used in `pycall_classification_example.rb`
   - Experiment #3: Modify the script to print out the confusion matrix for the model instead of the accuracy.
   (Hint: take a look at the function `confusion_matrix` in the `sklearn.metrics` library )
   - Experiment #4: Modify the script to evaluate a series of models trained with different amounts of training data by changing the amount of examples in your dataset to have 50, 100 and 150 examples. (Hint: Pass a parameter into the `make_classification` method)
   - Experiment #5: Modify the script to use a different data set, your own data or from elsewhere.
   - Experiment #6: Modify the script to evaluate for a regression problem.
+  - Experiment #7: Simplify this code using [`sklearn.model_selection.GridSearchCV`](http://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html) to find the best tuning parameters.
 
 3. `ruby pycall_classification_example.rb` - Shows how different classifier algorithms perform with different types of data, and plots the results. The plot is saved into a file called `comparison.png`. You can retrieve the image to view locally with `docker cp <container_id>:/usr/app/comparison.png <where you want to save the file locally>`
   - Experiment #1: Add/swap out some more algorithms and datasets.

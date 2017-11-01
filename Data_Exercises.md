@@ -11,7 +11,7 @@ We will explore some of these issues while examining a number of datasets.
 
 [Kaggle.com - Chocolate Bar ratings](https://www.kaggle.com/rtatman/chocolate-bar-ratings)
 
-[Kaggle.com - Student Alcohol Consumption (EU)](https://www.kaggle.com/uciml/student-alcohol-consumption)
+[Kaggle.com - Student Alcohol Consumption (EU)](https://www.kaggle.com/uciml/student-alcohol-consumption), originally from [UCI](https://archive.ics.uci.edu/ml/datasets/student+performance)
 
 [UCI - Mushroom classification](https://archive.ics.uci.edu/ml/datasets/Mushroom)
 
