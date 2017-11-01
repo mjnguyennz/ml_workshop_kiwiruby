@@ -7,7 +7,7 @@
 In this 3 hour workshop you will learn about the Machine Learning workflow, and how to apply machine learning techniques in Ruby. While the theory of machine learning concepts is necessary, nothing beats actually diving in and giving it a try. Hopefully, after this workshop, you will be inspired to continue with Machine Learning and to contribute to the Ruby community and help improve the ecosystem of [tools available](ML_with_Ruby.md) in Ruby for Machine Learning and Data Science. This workshop does not require too much knowledge of math and statistics, but certainly a familiarity with basic statistics will help.
 
 ## Slides
-The slides for this workshop are available at Speakerdeck, as well as [here](slides.pdf) in this repository.
+The slides for this workshop are available at [Speakerdeck](https://speakerdeck.com/mjnguyen/kiwiruby-workshop-machine-learning-for-ruby-developers), as well as [here](slides.pdf) in this repository.
 
 ## Outline
 In this workshop, I have tried to keep the exercises as flexible as possible, so you can explore the machine learning aspects most interesting to you. In addition to learning about general Machine Learning concepts, we will apply them as we explore a MLaaS (Machine Learning as a Service) and leveraging Python's data science tools and libraries from within Ruby, as well as touch on some Machine Learning tools that have been ported to Ruby.
